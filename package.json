@@ -1,0 +1,24 @@
+{
+  "name": "website_2021",
+  "version": "1.0.0",
+  "description": "web site 2021",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adaro": "^1.0.4",
+    "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.14.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.20.1",
+    "mongoose": "^4.10.2",
+    "qr-image": "^3.2.0"
+  }
+}
