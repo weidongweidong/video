@@ -21,15 +21,16 @@
                     <li><a target="__blank" href="https://douyin.chenweidong.top/" onclick="_hmt.push(['_trackEvent', 'youpin', 'click'])">抖音视频无水印下载</a></li>
                 </ul>
             </div>
+            <div>
+            </div>
         </div>
 
         <div class="body_div layout">
             <div class="search_div">
                 <select onchange="jkChanged(this)">
-                    <option value="https://17kyun.com/api.php?url=">默认解析接口</option>	
-                    <option value="https://jx.yunboys.cn/?url=">接口1</option>
-                    <option value="https://okjx.cc/?url=">接口2</option>
-                    <option value="https://qimihe.com/?url">接口3</option>
+                    <option value="https://okjx.cc/?url=">默认解析接口</option>	
+                    <option value="https://www.1717yun.com/jx/ty.php?url=">接口1</option>
+                    <option value="https://z1.m1907.cn/?jx=">接口2</option>
                     <option value="https://www.pangujiexi.cc/jiexi.php?url=">接口4</option>
                     <option value="https://api.jiexi.la/?url=">接口5</option>
                     <option value="https://www.h8jx.com/jiexi.php?url=">接口6</option>
@@ -38,7 +39,7 @@
                 </select>
                 <div class="input">
                     <a class="clear" onclick="document.querySelector('#input').value = '';document.querySelector('#input').focus();"></a>
-                    <input id="input" type="text" placeholder="请输入视频播放地址" value="{url}">
+                    <input id="input" type="text" onchange="play()" placeholder="请输入视频播放地址" value="{url}">
                 </div>
                 <div class="btns">
                     <button onclick="play()">立即播放</button>
@@ -94,7 +95,7 @@
     <script>
         var iframeDiv = document.querySelector("#iframe_div");
         var input = document.querySelector("#input");
-        var jiekou = 'https://17kyun.com/api.php?url=', url = null;
+        var jiekou = 'https://okjx.cc/?url=', url = null;
         function jkChanged(v){
             jiekou = v.value;
             play();

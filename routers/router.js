@@ -7,5 +7,6 @@ const vipController = require('../controllers/vipController');
 
 router.get('/api/qr_code', apiController.qr_code);
 router.get('/', vipController.index);
+router.get('/time', vipController.time);
 
 module.exports = router;
