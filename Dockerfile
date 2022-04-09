@@ -16,8 +16,9 @@ COPY ./package.json /data/api/package.json
 WORKDIR /data/api/
 
 # 安装node包
-RUN npm config set registry "http://registry.npm.taobao.org/"
-RUN npm install
+RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+RUN cnpm install
 
 RUN chmod a+x /data/api/entrypoint.sh
 
